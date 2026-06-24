@@ -57,6 +57,14 @@ docker compose up -d
 - FastAPI 后端: http://localhost:9988
 - 看板前端: http://localhost:7860
 
+## 界面截图
+
+### 看板仪表盘
+![看板](images/dashboard.png)
+
+### FastAPI 自动生成接口文档
+![API 文档](images/doc.png)
+
 ## 学习路径
 
 1. **基础调用** — 理解 API 请求、System Prompt、多轮对话
