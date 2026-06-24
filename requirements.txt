@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+chromadb
+requests
+langchain
+langchain-anthropic
+langchain-core
+pydantic

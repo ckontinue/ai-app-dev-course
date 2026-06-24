@@ -1,0 +1,22 @@
+services:
+
+  # ── FastAPI 后端 ──
+  fastapi:
+    image: fastapi-agent:v2
+    container_name: fastapi
+    ports:
+      - "9988:9988"
+    env_file:
+      - .env
+
+  # ── 看板前端 ──
+  dashboard:
+    image: gradio-dashboard:v1
+    container_name: dashboard
+    ports:
+      - "7860:7860"
+    depends_on:
+      - fastapi
+    environment:
+      - API_HOST=fastapi
+      - API_PORT=9988

@@ -1,0 +1,28 @@
+# 密钥 — 绝对不能提交
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# 本地交接文件
+handoff.md
+
+# Chroma 数据库
+chroma_db/
+
+# Docker （本地自用不提交，除非要分享镜像配置）
+# Dockerfile*   ← 如果需要分享项目就去掉这行的 # 号
+
+# 日志
+*.log
+
+# 生成的输出文件
+*.db
+*.csv
+*_report.md
+*_report.png
+
+# Gradio 运行时
+.gradio/
